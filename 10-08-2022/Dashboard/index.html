@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/53f947c624.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="assets/CSS/style.css">
+
+    <title>Dashbord</title>
+</head>
+<body>
+    <div class="d-flex flex-column h-100">
+        <!--header-->
+        <header class="main-header " id="header">
+            <div class="d-flex justyfy-content-between align-item-center">
+                <div class="d-flex align-item-center">
+                    <!--brand logo-->
+                    <label for="toggleSidebar" class="toggle-button cursor-pointer icon-hover justify-content-between label-menu">
+                        <span class="icon icon-position fa-solid fa-bars"></span>
+                    </label>
+                    <!--search bar-->
+                    <div class="search-bar align-item-center">
+                        <label for="searchBar"><span class="icon fa-solid fa-magnifying-glass"></span></label>
+                        <input type="text" id="searchBar" name="search" placeholder="serach">
+                        <button class="btn-primary btn">serach</button>
+                    </div>
+                </div>
+                <!--Action bar-->
+                <div class="action-bar d-flex align-item-center">
+                    <a href="" class="notification ">
+                        <span class="icon icon-position icon-hover fa-solid fa-comment-dots"></span>
+                    </a>
+                    <a href="" class="notification">
+                        <span class="icon icon-position icon-hover fa-solid fa-bell"></span>
+                    </a>
+                    <a class="dropdown d-flex align-item-center icon-position-dropdown">
+                        <div class="profile-wrap">
+                            <img src="assets/image/pic1.jpg" alt="profile pic">
+                        </div>
+                        <span class="icon icon-hover fa-regular fa-square-caret-down "></span>
+                    </a>
+                </div>
+            </div>
+        </header>
+        <!--End header-->
+        <!--sidebar-->
+        <div class="main-content d-flex overflow-hidden flex-grow-1 sidebar-wrapper">
+            <input type="checkbox" id="toggleSidebar">
+            <aside class="sidebar">
+                <div class="d-flex flex-column justify-content-between h-100">
+                    <ul class="nav-list">
+                        <li class="nav-item">
+                            <a href="" class="nav-link">
+                                <span class="icon-hover icon fa-solid fa-table-columns"></span>
+                                <span class="nav-text">Bar</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="" class="nav-link">
+                                <span class="icon-hover icon fa-solid fa-cart-arrow-down"></span>
+                                <span class="nav-text">Cart</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="" class="nav-link">
+                                <span class="icon-hover icon-padding icon fa-solid fa-file"></span>
+                                <span class="nav-text">File</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="" class="nav-link">
+                                <span class="icon-hover icon fa-solid fa-gear"></span>
+                                <span class="nav-text">Setting</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="nav-list mb-4">
+                        <li class="nav-item">
+                            <a href="" class="nav-link">
+                                <span class="icon-hover icon fa-solid fa-circle-info"></span>
+                                <span class="nav-text">Info</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="" class="nav-link">
+                                <span class="icon-hover icon fa-solid fa-arrow-right-from-bracket"></span>
+                                <span class="nav-text">Sign up</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </aside>
+            <!--End sidebar-->
+            <!--main-->
+            <main id="main" class="flex-grow-1">
+                <h1>Dashboard</h1>
+                <div class="d-flex row">
+                    <div class="card-wrapper">
+                        <!--card1-->
+                        <div class="card card-background-color">
+                            <div class="icon-wrapper">
+                                <span class="icon fa-regular fa-eye"></span>
+                            </div>
+                            <h4>Total Viwes</h4>
+                            <h2>308.402</h2>
+                            <p><small>Add New Product</small></p>
+                        </div>
+                    </div>
+                    <!--card2-->
+                    <div class="card-wrapper">
+                        <div class="card">
+                            <div class="icon-wrapper">
+                                <span class="icon icon-product fa-solid fa-eye"></span>
+                            </div>
+                            <h4>Total Viwes</h4>
+                            <h2>308.402</h2>
+                            <p><small><a href="">+Add New Product</a></small></p>
+                        </div>
+                    </div>
+                    <!--card3-->
+                    <div class="card-wrapper">
+                        <div class="card">
+                            <div class="icon-wrapper">
+                                <span class="icon icon-user fa-regular fa-user"></span>
+                            </div>
+                            <h4>Total Viwes</h4>
+                            <h2>308.402</h2>
+                            <p><small>Add New Product</small></p>
+                        </div>
+                    </div>
+                    <!--card4-->
+                    <div class="card-wrapper">
+                        <div class="card">
+                            <div class="icon-wrapper">
+                                <span class="icon icon-sell fa-solid fa-cart-arrow-down"></span>
+                            </div>
+                            <h4>Total Viwes</h4>
+                            <h2>308.402</h2>
+                            <p><small>Add New Product</small></p>
+                        </div>
+                    </div>
+                </div> 
+                <section class="d-flex ">
+                    <div class="table-wrapper">
+                        <table>
+                            <tr class="table-back">
+                                <th>No</th>
+                                <th>Product Name</th>
+                                <th>Status</th>
+                                <th>Sold</th>
+                                <th>View</th>
+                            </tr>
+                            <tr class="row-back">
+                                <td>1</td>
+                                <td>
+                                    <div class="d-flex align-item-center">
+                                        <img src="assets/image/mo.jpg" alt="abc">
+                                        New Mobile App UI</div>
+                                </td>
+                                <td><a href="">ACtive</a></td>
+                                <td>10</td>
+                                <td>320</td>
+                            </tr>
+                            <tr class="row-back">
+                                <td>2</td>
+                                <td>
+                                    <div class="d-flex align-item-center">
+                                        <img src="assets/image/mo.jpg" alt="abc">
+                                        New Mobile App UI</div>
+                                </td>
+                                <td><a href="">ACtive</a></td>
+                                <td>10</td>
+                                <td>320</td>
+                            </tr>
+                            <tr class="row-back">
+                                <td>3</td>
+                                <td>
+                                    <div class="d-flex align-item-center">
+                                        <img src="assets/image/mo.jpg" alt="abc">
+                                        New Mobile App UI</div>
+                                </td>
+                                <td><a href="">ACtive</a></td>
+                                <td>10</td>
+                                <td>320</td>
+                            </tr>
+                            <tr class="row-back">
+                                <td>4</td>
+                                <td>
+                                    <div class="d-flex align-item-center">
+                                        <img src="assets/image/mo.jpg" alt="abc">
+                                        New Mobile App UI</div>
+                                </td>
+                                <td><a href="">ACtive</a></td>
+                                <td>10</td>
+                                <td>320</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="chart">
+                        <div class="d-flex align-item-center">
+                            <img class="img-chart" src="assets/image/chart.png" alt="abc">
+                        </div>
+                    </div>
+                </section>
+           </main>
+        <!--End main-->
+        </div>
+    </div>
+</body>
+</html>

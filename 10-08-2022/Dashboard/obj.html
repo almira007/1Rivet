@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+   <script>
+        // Create an object
+        // const person={name:'abc',age:14};
+        // console.log(person);     
+
+        //Constructor
+        // const person={name:'abc',age:14};
+        //  const child=object.create(person)
+        //  console.log(child);
+
+        //object assign
+        // const obj1={a:1,b:1,c:1};
+        // const obj2={a:2,b:2,c:2};
+        // const object1=Object.assign(obj1,obj2);
+        // // console.log(obj1);
+        // console.log(object1)
+        
+        // object keys
+        // const obj1={a:1,b:1,c:1};
+        // console.log(Object.keys(obj1));
+
+        // object values
+        // const obj1={a:1,b:1,c:1};
+        // console.log(Object.values(obj1));
+        
+        // object entries
+        // const obj1={a:1,b:1,c:1};
+        // console.log(Object.entries(obj1));
+
+        //object hasOwn
+        // const obj1={a:1,b:2};
+        // console.log(Object.hasOwn(obj1,'a'));
+
+        //object freeze
+        const obj1={a:1,b:2};
+        Object.freeze(obj);
+        obj.prop = 33;
+// Throws an error in strict mode
+    console.log(obj.prop);
+// expected output: 42
+</script>
+</body>
+</html>
