@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/CSS/style.css">
+</head>
+
+<body>
+    <h3> LOGIN </h3>
+    <form action="#" form="dateForm" onsubmit="submitForm();">
+        <h4> Date Picker</h4>
+        <select name="country" id="selectDateTime" onchange=" onchangedata()">Select Country
+            <option>India</option>
+            <option>England</option>
+            <option>Russia</option>
+            <option>USA</option>
+            <option>Africa</option>
+        </select>
+        <input type="submit" value="submit" /><br>
+        <div id="localDateTimePrint"></div>
+        <div id="usDateTimePrint"></div>
+    </form>
+
+
+
+
+</body>
+<script type="text/javascript">
+    let selectDateTime;
+    let usDateTime;
+    let usDateTimePrint;
+    function submitForm() {
+        localDateTime = document.getElementById('selectDateTime').value;
+        usDateTime = new Date(selectDateTime).toLocaleString('en-US', { timeZone: 'America/New_York' });
+        console.clear();
+        console.log('Local Date and Time :-', selectDateTime);
+        console.log('********************************************')
+        console.log('US Date and Time : -', usDateTime);
+        document.getElementById("localDateTimePrint").innerHTML = selectDateTime.toLocaleString();
+        document.getElementById("usDateTimePrint").innerHTML = usDateTime;
+    }
+</script>
+<!-- 
+<script type="text/javascript">
+   
+    // function onchangedata() {
+
+    //     let select =document.getElementById("selectDateTime");
+    //     let output =select.options[select.selectedIndex].
+
+    // //    let usatime = new Date().toLocaleString('en-US', { timeZone: 'America/New_York' });
+    // //     let aftime =  new Date().toLocaleString('en-US', { timeZone: 'Africa/Abidjan' });
+    //     console.log(usatime);
+    // }
+// setInterval(submitForm,1000)
+
+    // setInterval(submitForm)
+
+    // let localDateTime;
+    // let usDateTime;
+    // let usDateTimePrint;
+    // function submitForm() {
+    //     localDateTime = document.getElementById('localDateTime').value;
+    //     usDateTime = new Date(localDateTime).toLocaleString('en-US', { timeZone: 'America/New_York' });
+    //     // console.clear();
+    //     console.log('Local Date and Time :-', localDateTime);
+    //     console.log('********************************************')
+    //     console.log('US Date and Time : -', usDateTime);
+    //     document.getElementById("localDateTimePrint").innerHTML = localDateTime.toLocaleString();
+    //     document.getElementById("usDateTimePrint").innerHTML = usDateTime;
+    // }
+</script> -->
+
+</html>
