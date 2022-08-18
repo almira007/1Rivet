@@ -1,0 +1,131 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body,html{
+    background-color: #EDF2F7;
+    /* text-align: center;
+    align-items: center;
+    justify-content: center; */
+    height: 100%;
+    width: 100%;
+   
+}
+.d-none {
+    display: none;
+  }
+.no-records{
+    text-align: center;
+    color: red;
+    font-size: 20px;
+}
+.justify-content{
+    justify-content: center;
+}
+
+.main-contain{
+    width: 100%;
+    height: 100vh;
+
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.input-back{
+     background-color: #bfebec;
+     border-radius: 20px;
+     width: 100%;
+     font-size: 25px;
+     padding: 8px 0px;
+     margin: 20px 5px;
+    
+    
+}
+
+table td,th{
+    width: 100%;
+    padding: 10px 80px;
+    justify-content: center;
+    text-align: center;
+    border-collapse: collapse;
+    background-color:#EDF2F7;
+    border: 1px solid black;
+    
+}
+
+table th {
+    background-color: #90b8c2;
+    color: #fff;
+}
+
+.model-wrapper{
+    position: fixed;
+    left: 0;
+    top: 0;
+    background: rgba(0, 0, 0, 0.6);
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    pointer-events: none;
+    transition: all .3s ease-in-out;
+}
+.model-container{
+    background: #fff;
+    width: 560px;
+    max-width: 90%;
+    padding: 20px;
+    border-radius: 4px;
+    position: relative;
+}
+.model-container button.close{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    font-size: 32px;
+    background: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+.model-container button.close:hover{
+    color:#b30000;
+}
+.btn-primary{
+    background-color:  #90b8c2;
+    padding: 10px 40px;
+    border-radius: 20px;
+    font-size: 18px;
+    cursor: pointer;
+}
+h1{
+   font-size: 50px;
+   text-align: center;
+}
+p{
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+.action{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.active{
+    opacity: 1;
+    pointer-events: auto;
+}
