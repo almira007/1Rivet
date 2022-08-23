@@ -1,128 +1,158 @@
-const users =[{
-    Item : "Skippy Peanut Butter 160z",
-    Date : "07 Nov,8:35pm",
-    Type : "Discarded",
-    EstCost : "$40.27",
-    Last : "18Aug",
-    List : "Grocery",
-    Auto : "No",
-    BuyNow : "amazon"
+const users = [{
+    Item: "Skippy Peanut Butter 160z",
+    Date: "07 Nov,8:35pm",
+    Type: "Discarded",
+    EstCost: "$40.27",
+    Last: "18Aug",
+    List: "Grocery",
+    Auto: "No",
+    BuyNow: "amazon"
 },
 {
-    Item : "Skippy Peanut Butter 160z",
-    Date : "08 Nov,8:35pm",
-    Type : "Want",
-    EstCost : "$76.50",
-    Last : "17Aug",
-    List : "August",
-    Auto : "No",
-    BuyNow : "N/A" 
+    Item: "Skippy Peanut Butter 160z",
+    Date: "08 Nov,8:35pm",
+    Type: "Want",
+    EstCost: "$76.50",
+    Last: "17Aug",
+    List: "August",
+    Auto: "No",
+    BuyNow: "N/A"
 },
 {
-    Item : "Skippy Peanut Butter 160z",
-    Date : "09 Nov,8:35pm",
-    Type : "Wanting",
-    EstCost : "$47.85",
-    Last : "22Aug",
-    List : "Wholefood",
-    Auto : "No",
-    BuyNow : "amazon" 
+    Item: "Skippy Peanut Butter 160z",
+    Date: "09 Nov,8:35pm",
+    Type: "Waiting",
+    EstCost: "$47.85",
+    Last: "22Aug",
+    List: "Wholefood",
+    Auto: "No",
+    BuyNow: "amazon"
 },
 {
-    Item : "Skippy Peanut Butter 160z",
-    Date : "10 Nov,8:35pm",
-    Type : "Discarded",
-    EstCost : "$27.43",
-    Last : "26Aug",
-    List : "Grocery",
-    Auto : "No",
-    BuyNow : "N/A" 
+    Item: "Skippy Peanut Butter 160z",
+    Date: "10 Nov,8:35pm",
+    Type: "Discarded",
+    EstCost: "$27.43",
+    Last: "26Aug",
+    List: "Grocery",
+    Auto: "No",
+    BuyNow: "N/A"
 },
 {
-    Item : "Skippy Peanut Butter 160z",
-    Date : "11 Nov,8:35pm",
-    Type : "Cancleed",
-    EstCost : "$35.02",
-    Last : "20Aug",
-    List : "August",
-    Auto : "No",
-    BuyNow : "amazon" 
+    Item: "Skippy Peanut Butter 160z",
+    Date: "11 Nov,8:35pm",
+    Type: "Cancleed",
+    EstCost: "$35.02",
+    Last: "20Aug",
+    List: "August",
+    Auto: "No",
+    BuyNow: "amazon"
 },
 {
-    Item : "Skippy Peanut Butter 160z",
-    Date : "12 Nov,8:35pm",
-    Type : "Want",
-    EstCost : "$32.85",
-    Last : "11Aug",
-    List : "August",
-    Auto : "No",
-    BuyNow : "N/A" 
+    Item: "Skippy Peanut Butter 160z",
+    Date: "12 Nov,8:35pm",
+    Type: "Want",
+    EstCost: "$32.85",
+    Last: "11Aug",
+    List: "August",
+    Auto: "No",
+    BuyNow: "N/A"
 },
 {
-    Item : "Skippy Peanut Butter 160z",
-    Date : "13 Nov,8:35pm",
-    Type : "Want",
-    EstCost : "$58.99",
-    Last : "23Aug",
-    List : "Wholefood",
-    Auto : "No",
-    BuyNow : "amazon" 
+    Item: "Skippy Peanut Butter 160z",
+    Date: "13 Nov,8:35pm",
+    Type: "Want",
+    EstCost: "$58.99",
+    Last: "23Aug",
+    List: "Wholefood",
+    Auto: "No",
+    BuyNow: "amazon"
 },
 {
-    Item : "Skippy Peanut Butter 160z",
-    Date : "14 Nov,8:35pm",
-    Type : "Want",
-    EstCost : "$63.44",
-    Last : "22Aug",
-    List : "Grocery",
-    Auto : "No",
-    BuyNow : "amazon" 
+    Item: "Skippy Peanut Butter 160z",
+    Date: "14 Nov,8:35pm",
+    Type: "Want",
+    EstCost: "$63.44",
+    Last: "22Aug",
+    List: "Grocery",
+    Auto: "No",
+    BuyNow: "amazon"
+}, {
+    Item: "Skippy Peanut Butter 160z",
+    Date: "14 Nov,8:35pm",
+    Type: "Want",
+    EstCost: "$63.44",
+    Last: "22Aug",
+    List: "Grocery",
+    Auto: "No",
+    BuyNow: "amazon"
+},
+{
+    Item: "Skippy Peanut Butter 160z",
+    Date: "14 Nov,8:35pm",
+    Type: "Want",
+    EstCost: "$63.44",
+    Last: "22Aug",
+    List: "Grocery",
+    Auto: "No",
+    BuyNow: "amazon"
+},
+{
+    Item: "Skippy Peanut Butter 160z",
+    Date: "09 Nov,8:35pm",
+    Type: "Waiting",
+    EstCost: "$47.85",
+    Last: "22Aug",
+    List: "Wholefood",
+    Auto: "No",
+    BuyNow: "amazon"
 }
 ]
-
-getData(users);
-//Get Data
-function getData(data) {
-    const userTableBody = document.querySelector("#user-table-body");
-    //console.log(userTableBody);
-
-
-    data.forEach((user) => {
-
-        const tableRow = document.createElement('tr');
-        // console.log(tableRow);
+setTimeout(() => {
+    getData(users);
+    //Get Data
+    function getData(data) {
+        const userTableBody = document.querySelector("#user-table-body");
+        //console.log(userTableBody);
 
 
-        for (const item in user) {
-            const tablecol = document.createElement('td');
-            // console.log(tablecol);
-            const value = user[item];
-            if(item == "Type"){
-                const bgcol = document.createElement("span");
-                bgcol.classList.add("badge");
-                bgcol.textContent = user[item];
+        data.forEach((user) => {
 
-                if(user[item] == "Discarded"){
-                    bgcol.classList.add("badge-discarded");
+            const tableRow = document.createElement('tr');
+            // console.log(tableRow);
+
+
+            for (const item in user) {
+                const tablecol = document.createElement('td');
+                // console.log(tablecol);
+                const value = user[item];
+                if (item == "Type") {
+                    const bgcol = document.createElement("span");
+                    bgcol.classList.add("badge");
+                    bgcol.textContent = user[item];
+
+                    if (user[item] == "Discarded") {
+                        bgcol.classList.add("badge-discarded");
+                    }
+                    if (user[item] == "Want") {
+                        bgcol.classList.add("badge-want");
+                    }
+                    if (user[item] == "Waiting") {
+                        bgcol.classList.add("badge-waiting");
+                    }
+                    tablecol.appendChild(bgcol);
                 }
-                if(user[item] == "Want"){
-                    bgcol.classList.add("badge-want");
+                else {
+                    tablecol.textContent = value
+                    // console.log(value);
                 }
-                if(user[item] == "Waiting"){
-                    bgcol.classList.add("badge-waiting");
-                }
-                tablecol.appendChild(bgcol);
+                tableRow.appendChild(tablecol)
             }
-            else{
-                tablecol.textContent = value
-                // console.log(value);
-            }   
-            tableRow.appendChild(tablecol)
-        }
-        userTableBody.appendChild(tableRow);
-    });
+            userTableBody.appendChild(tableRow);
+        });
+    }
+}, 2000);
 
-}
 //Filter Data
 
 
