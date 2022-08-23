@@ -15,6 +15,12 @@ body,html{
     display: flex;
     justify-content: space-between;
 }
+.d-flex1{
+    display: flex;
+}
+.m-70{
+    margin-top: 70px;
+}
 .flex-column{
     flex-direction: column;
 }
@@ -44,6 +50,11 @@ img{
     width: 50px;
     max-width: 100%;
     border-radius: 50px;
+}
+.icon-round{
+    background: #ffc0c0;
+    padding:20px;
+    border-radius: 50%;
 }
 .icon-space{
         height:50px;
@@ -104,10 +115,11 @@ a{
     margin-left: 1.25rem;
     text-transform: capitalize;
 }
-.nav-item:hover{
+aside ul li:hover{
     background-color: rgb(172, 238, 183);
+    color: #0da825;
     transform: scale(1.1);
-    border-left: green;
+    border-left: 5px solid green;
     transition: .5s;
  }
 /* Main */
@@ -173,6 +185,24 @@ table{
 .table-space{
     padding-top: 20px;
 }
+/*type Color*/
+.badge{
+    background-color: #ffefed;
+    border-radius: 10px;
+    padding: 5px;
+}
+.badge-discarded{
+    background-color: #ffefed;
+    color: red;
+}
+.badge-want{
+    background-color: #ffefed;
+    color: green;
+}
+.badge-waiting{
+    background-color: #ffefed;
+    color: #ef9f3f;
+}
 /*Card*/
 .row{
     flex-wrap: wrap;
@@ -209,7 +239,7 @@ table{
     margin-bottom: 10px;
 }
 .card:hover{
-    background-color:#eb97a2;
+    background-color:#126a9c;
 }
 .card:hover .icon{
     color: red;
