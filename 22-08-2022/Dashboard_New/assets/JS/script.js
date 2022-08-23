@@ -80,7 +80,6 @@ const users =[{
 }
 ]
 
-
 getData(users);
 //Get Data
 function getData(data) {
@@ -98,15 +97,32 @@ function getData(data) {
             const tablecol = document.createElement('td');
             // console.log(tablecol);
             const value = user[item];
-            // console.log(value);
-            tablecol.textContent = value;
+            if(item == "Type"){
+                const bgcol = document.createElement("span");
+                bgcol.classList.add("badge");
+                bgcol.textContent = user[item];
+
+                if(user[item] == "Discarded"){
+                    bgcol.classList.add("badge-discarded");
+                }
+                if(user[item] == "Want"){
+                    bgcol.classList.add("badge-want");
+                }
+                if(user[item] == "Waiting"){
+                    bgcol.classList.add("badge-waiting");
+                }
+                tablecol.appendChild(bgcol);
+            }
+            else{
+                tablecol.textContent = value
+                // console.log(value);
+            }   
             tableRow.appendChild(tablecol)
         }
         userTableBody.appendChild(tableRow);
     });
 
 }
-
 //Filter Data
 
 
